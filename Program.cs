@@ -1,5 +1,6 @@
 ﻿namespace LeetCode75
 {
+    
     public class Program
     {
         static void Main(string[] args)
@@ -17,7 +18,7 @@
             Console.WriteLine("flowers: " + CanPlaceFlowers(flowerbed, n));
 
             //238. Product of Array Except Self
-             int[] nums = { 1, 2, 3, 4 };
+             int[] nums = [ 1, 2, 3, 4 ];
             // int[] nums = {-1,1,0,-3,3};
             //int[] nums = { 1, -1 };
             //int[] nums = { 1, 1 };
@@ -29,6 +30,24 @@
 
             foreach (int num in numsResult)
                 Console.Write(num + " ");
+
+            Console.WriteLine();
+
+            PrefixSumExample pse = new PrefixSumExample();
+            int[] testNums = [4, 5, 1, 8, 2];
+            int[] answers = pse.ProductExceptSelf238(testNums);
+
+            foreach(int num in answers)
+            {
+                Console.Write(num + " ");
+            }
+
+            Console.WriteLine();
+            answers = pse.ProductExceptSelf238_0_1_space(testNums);
+            foreach(int num in answers)
+            {
+                Console.Write(num + " ");
+            }
 
         }
 
