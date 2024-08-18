@@ -85,11 +85,17 @@
             Console.WriteLine("334 = " + lt334.IncreasingTriplet(numsTriplet));
 
             // 443 string compresion
-            char[] charsCompress = ['a','a','b','b','c','c','c'];
-
+            //char[] charsCompress = ['a','a','b','b','c','c','c'];
+            //char[] charsCompress = ['a'];
+            char[] charsCompress = ['a','b','b','b','b','b','b','b','b','b','b','b','b'];
             StringCompression443 sc443 = new StringCompression443();
 
             int longestCount = sc443.Compress(charsCompress);
+            Console.WriteLine("Count = " + longestCount);
+            foreach(char ch in charsCompress)
+            {
+                Console.Write(ch + " ");
+            }
 
         }
 
