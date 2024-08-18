@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,38 +13,41 @@ namespace LeetCode75
 
         public int Compress(char[] chars)
         {
+            int len = chars.Length;
+
+            if (len == 0)
+                return 0; 
+
             int start = 0;
             int end = 1 ;
             int count = 1;
             int charLen = 0;
             char currentChar = chars[0];
-
-            for(int i = 1; i <= chars.Length;i++)
+            
+            for(int i = 1; i <= len; i++)
             {
-                if (end < chars.Length && chars[end] == currentChar)
+                if (end < len && chars[end] == currentChar)
                 {
                     count++;
                     end++;
                 }
                 else
                 {
+                    chars[charLen] = currentChar;
                     charLen++;
                     // Extract digits from the number
                     List<int> digits = [];
-                    while (count > 0)
+                    int compute = count;
+                    while (compute > 0)
                     {
-                        int digit = count % 10; // Get the last digit
+                        int digit = compute % 10; // Get the last digit
                         digits.Add(digit);       // Add it to the list
-                        count /= 10;            // Remove the last digit from the number
+                        compute /= 10;            // Remove the last digit from the number
                     }
                     digits.Reverse();
-                    for(int j = 0; j<digits.Count; j++)
+                    for(int j = 0; j<digits.Count && count > 1; j++)
                     {
-                        //chars[start + 1 + j] = (char)digits[j];
-                        //int number = 3;
-                        chars[start + 1 + j] = digits[j].ToString()[0];
-                        //Console.WriteLine(charRepresentation); // Output: '3'
-
+                        chars[charLen] = digits[j].ToString()[0];                  
                         charLen++;
                     }
                     if(i < chars.Length)
