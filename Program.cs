@@ -49,6 +49,21 @@
                 Console.Write(num + " ");
             }
 
+            //334.Increasing Triplet Subsequence
+            //int[] numsTriplet = [1, 2, 3, 4, 5];
+            //int[] numsTriplet = [5, 4, 3, 2, 1];
+            //int[] numsTriplet = [2, 1, 5, 0, 4, 6];
+            //int[] numsTriplet = [20, 100, 10, 12, 5, 13];
+            //int[] numsTriplet = [1, 5, 0, 4, 1, 3];
+            //int[] numsTriplet = [6, 7, 1, 2];
+            //int[] numsTriplet = [2, 1, 5, 0, 3, 4];
+            int[] numsTriplet = [5, 1, 5, 5, 2, 5, 4];
+
+
+            Leetcode334 lt334 = new Leetcode334();
+            Console.WriteLine();
+            Console.WriteLine("334 = " + lt334.IncreasingTriplet(numsTriplet));
+
         }
 
         //238. Product of Array Except Self
