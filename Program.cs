@@ -7,6 +7,26 @@
         {
             Console.WriteLine("Hello, World!");
 
+            // get the digits of a number
+            int number = 1354;
+
+            // simplification
+            //List<int> digits = new List<int>();
+            //List<int> digits = new();
+            List<int> digits = [];
+
+            // Extract digits from the number
+            while (number > 0)
+            {
+                int digit = number % 10; // Get the last digit
+                digits.Add(digit);       // Add it to the list
+                number /= 10;            // Remove the last digit from the number
+            }
+            digits.Reverse();
+            digits.ForEach(Console.Write);
+
+            Console.WriteLine();
+
             // 605. Can Place Flowers
             // int[] flowerbed = {1,0,0,0,1,1,0,0,0,1,1,1,1,1};
             // int[] flowerbed = {1,0,0,0,0,0,1};
@@ -33,7 +53,7 @@
 
             Console.WriteLine();
 
-            PrefixSumExample pse = new PrefixSumExample();
+            PrefixSumExample pse = new();
             int[] testNums = [4, 5, 1, 8, 2];
             int[] answers = pse.ProductExceptSelf238(testNums);
 
@@ -60,11 +80,24 @@
             int[] numsTriplet = [5, 1, 5, 5, 2, 5, 4];
 
 
-            Leetcode334 lt334 = new Leetcode334();
+            Leetcode334 lt334 = new();
             Console.WriteLine();
             Console.WriteLine("334 = " + lt334.IncreasingTriplet(numsTriplet));
 
+            // 443 string compresion
+            char[] charsCompress = ['a','a','b','b','c','c','c'];
+
+            StringCompression443 sc443 = new StringCompression443();
+
+            int longestCount = sc443.Compress(charsCompress);
+
         }
+
+
+
+
+
+
 
         //238. Product of Array Except Self
 
