@@ -11,7 +11,34 @@ namespace LeetCode75
     {
        // two pointers
 
-        public int Compress(char[] chars)
+        // a better solution than the one I came up with
+        public static int Compress2(char[] chars)
+        {
+            int i = 0, res = 0;
+
+            while(i < chars.Length)
+            {
+                int groupLenth = 1;
+                while(i + groupLenth < chars.Length && chars[i] == chars[i + groupLenth])
+                {
+                    groupLenth++;
+                }
+
+                chars[res++] = chars[i];
+                if(groupLenth > 1)
+                {
+                    foreach(char c in groupLenth.ToString().ToCharArray())
+                    {
+                        chars[res++] = c;
+                    }
+                }
+                i += groupLenth;
+            }
+
+            return res;
+        }
+
+        public static int Compress(char[] chars)
         {
             int len = chars.Length;
 

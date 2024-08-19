@@ -87,13 +87,13 @@
             // 443 string compresion
             //char[] charsCompress = ['a','a','b','b','c','c','c'];
             //char[] charsCompress = ['a'];
-            //char[] charsCompress = ['a', 'a', 'a', 'b', 'b', 'a', 'a'];
+            char[] charsCompress = ['a', 'a', 'a', 'b', 'b', 'a', 'a'];
             //
             //
-            char[] charsCompress = ['a','b','b','b','b','b','b','b','b','b','b','b','b'];
-            StringCompression443 sc443 = new StringCompression443();
+            //char[] charsCompress = ['a','b','b','b','b','b','b','b','b','b','b','b','b'];
+            //StringCompression443 sc443 = new StringCompression443();
 
-            int longestCount = sc443.Compress(charsCompress);
+            int longestCount = StringCompression443.Compress2(charsCompress);
             Console.WriteLine("Count = " + longestCount);
             foreach(char ch in charsCompress)
             {
