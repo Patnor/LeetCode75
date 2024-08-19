@@ -100,6 +100,19 @@
                 Console.Write(ch + " ");
             }
 
+
+            // 283 moving zeros
+            Console.WriteLine();
+            int[] numsMove = [0, 1, 0, 3, 12];
+
+            MoveZeros283.MoveZeros(numsMove);
+            foreach (int num in numsMove)
+                Console.Write(num + " ");
+      
+
+
+
+
         }
 
 
