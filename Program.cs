@@ -108,10 +108,15 @@
             MoveZeros283.MoveZeros(numsMove);
             foreach (int num in numsMove)
                 Console.Write(num + " ");
-      
 
 
+            // 392 Is Subsequence
+            // two pointers
+            Console.WriteLine();
+            //string s = "abc", t = "ahbgdc"; // true
+            string s = "axc", t = "ahbgdc";  // false
 
+            Console.Write(" Is sub = " + IsSubsequence392.IsSubsequence(s, t));
 
         }
 
