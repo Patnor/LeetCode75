@@ -132,6 +132,16 @@
             Console.WriteLine("Area most water = " + solution);
 
 
+
+
+            // 1679. Max Number of K-Sum Pairs
+            int[] nums1679 = [1, 2, 3, 4];
+            int k1679 = 5;
+
+            Console.WriteLine("1679 Max: " + MaxNumberofKSumPairs1679.MaxOperations(nums1679, k1679));
+
+
+
         }
 
 
