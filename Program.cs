@@ -118,6 +118,13 @@
 
             Console.Write(" Is sub = " + IsSubsequence392.IsSubsequence(s, t));
 
+
+            // Container with most water 11
+            int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+            int solution = ContainerWithMostWater11.MaxArea(height);
+            Console.WriteLine("Area most water = " + solution);
+
+
         }
 
 
