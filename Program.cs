@@ -138,11 +138,11 @@
             //int[] nums1679 = [1, 2, 3, 4];
             //int k1679 = 5;
 
-            //int[] nums1679 = [3, 1, 3, 4, 3];
-            //int k1679 = 6;
+            int[] nums1679 = [3, 1, 3, 4, 3];
+            int k1679 = 6;
 
-            int[] nums1679 = nums = [3, 1, 5, 1, 1, 1, 1, 1, 2, 2, 3, 2, 2];
-            int k1679 = 1;
+            //int[] nums1679 = nums = [3, 1, 5, 1, 1, 1, 1, 1, 2, 2, 3, 2, 2];
+            //int k1679 = 1;
 
             Console.WriteLine("1679 Max: " + MaxNumberofKSumPairs1679.MaxOperations(nums1679, k1679));
 

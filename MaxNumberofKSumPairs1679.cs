@@ -34,7 +34,46 @@ namespace LeetCode75
                 }
             }
             nums = list.ToArray();
+            foreach(int num in nums)
+            {
+                Console.Write(num + " ");
+            }
             return count;
+        }
+
+
+
+
+
+        public static int MaxOperations2(int[] nums, int k)
+        {
+
+            var count = new Dictionary<int, int>();
+            int ops = 0;
+
+            foreach (var num in nums)
+            {
+                int complement = k - num;
+
+                if (count.ContainsKey(complement) && count[complement] > 0)
+                {
+                    ops++;
+                    count[complement]--;
+                }
+                else
+                {
+                    if (count.ContainsKey(num))
+                    {
+                        count[num]++;
+                    }
+                    else
+                    {
+                        count[num] = 1;
+                    }
+                }
+            }
+
+            return ops;
         }
     }
 }
