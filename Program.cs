@@ -155,7 +155,7 @@
             int[] nums643 = [1, 12, -5, -6, 50, 3];
             int k643 = 4;
 
-           // int[] nums643 = [5];
+            //int[] nums643 = [5];
             //int k643 = 1;
 
             Console.WriteLine(MaximumAverageSubarray643.FindMaxAverage(nums643, k643));
