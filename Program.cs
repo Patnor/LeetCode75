@@ -1,4 +1,6 @@
-﻿namespace LeetCode75
+﻿using NUnit.Framework;
+
+namespace LeetCode75
 {
     
     public class Program
@@ -159,6 +161,24 @@
             //int k643 = 1;
 
             Console.WriteLine(MaximumAverageSubarray643.FindMaxAverage(nums643, k643));
+
+            // 1456. Maximum Number of Vowels in a Substring of Given Length
+
+            //Input: s = "abciiidef", k = 3
+            //Output: 3
+            //Explanation: The substring "iii" contains 3 vowel letters.
+
+
+            string str1456 = "abciiidef";
+            int k1456 = 3;
+
+            //string str1456 = "aeiou";
+            //int k1456 = 2;
+
+            //string str1456 = "leetcode";
+            //int k1456 = 3;
+
+            Console.WriteLine("num vowesl = " + MaxNumVowels1456.MaxVowels(str1456, k1456));
 
         }
 
