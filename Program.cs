@@ -147,6 +147,18 @@
             Console.WriteLine("1679 Max: " + MaxNumberofKSumPairs1679.MaxOperations(nums1679, k1679));
 
 
+            // 643. maximum average subarray I
+            // Input: nums = [1, 12, -5, -6, 50, 3], k = 4
+            // Output: 12.75000
+            // Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
+
+            int[] nums643 = [1, 12, -5, -6, 50, 3];
+            int k643 = 4;
+
+           // int[] nums643 = [5];
+            //int k643 = 1;
+
+            Console.WriteLine(MaximumAverageSubarray643.FindMaxAverage(nums643, k643));
 
         }
 
