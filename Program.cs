@@ -180,6 +180,19 @@ namespace LeetCode75
 
             Console.WriteLine("num vowels = " + MaxNumVowels1456.MaxVowels(str1456, k1456));
 
+
+            //1004. Max Consecutive Ones III
+
+            //        Input: nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], k = 2
+            //Output: 6
+            int[] nums1004 = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0];
+            int k1004 = 2;
+            
+            // 10
+            // int[] nums1004 = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1];
+            // int k1004 = 3;
+
+
         }
 
 
