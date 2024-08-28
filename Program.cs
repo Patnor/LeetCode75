@@ -178,7 +178,7 @@ namespace LeetCode75
             //string str1456 = "leetcode";
             //int k1456 = 3;
 
-            Console.WriteLine("num vowesl = " + MaxNumVowels1456.MaxVowels(str1456, k1456));
+            Console.WriteLine("num vowels = " + MaxNumVowels1456.MaxVowels(str1456, k1456));
 
         }
 
