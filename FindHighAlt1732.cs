@@ -22,5 +22,21 @@ namespace LeetCode75
 
             return maxAlt;
         }
+
+        // space complexity O(1)
+        public static int ImprovedLargestAltitude(int[] gain)
+        {
+            int maxAlt = 0;
+            int currentAlt = 0;
+
+            foreach(int num in gain)
+            {
+                currentAlt += num;
+
+                maxAlt = Math.Max(currentAlt, maxAlt);
+            }
+
+            return maxAlt;
+        }
     }
 }
