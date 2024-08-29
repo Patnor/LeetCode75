@@ -207,7 +207,7 @@ namespace LeetCode75
 
             //            Example 1:
 
-            int[] nums1493 = [1, 1, 0, 1];
+            //int[] nums1493 = [1, 1, 0, 1];
             //Output: 3
             //Explanation: After deleting the number in position 2, [1, 1, 1] contains 3 numbers with value of 1's.
 
@@ -219,9 +219,10 @@ namespace LeetCode75
 
             //Example 3:
 
-            //int[] nums1493 = [1, 1, 1];
+            int[] nums1493 = [1, 1, 1];
             //Output: 2
             //Explanation: You must delete one element.
+           // int[] nums1493 = [0];
 
             Console.WriteLine("Longest sub = " + LongestSub1493.LongestSubarray(nums1493));
 
