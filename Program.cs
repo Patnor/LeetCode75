@@ -243,6 +243,19 @@ namespace LeetCode75
 
             Console.WriteLine("High alt = " + FindHighAlt1732.ImprovedLargestAltitude(gain1732));
 
+
+            // 2215. Find the Difference of Two Arrays
+            int[] nums2215_1 = [1, 2, 3];
+            int[] nums2215_2 = [2, 4, 6];
+            // Output: [[1, 3],[4, 6]]
+
+            IList < IList<int>> answer = DifOf2Arrays2215.FindDifference(nums2215_1, nums2215_2);
+
+            foreach(IList<int> list in answer)
+            {
+                Console.WriteLine("List = " +list);
+            }
+
         }
 
 
