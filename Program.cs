@@ -253,7 +253,11 @@ namespace LeetCode75
 
             foreach(IList<int> list in answer)
             {
-                Console.WriteLine("List = " +list);
+                foreach(int i in list)
+                {
+                    Console.Write(i + " ");
+                }
+                Console.WriteLine();  
             }
 
         }
