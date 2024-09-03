@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LeetCode75
 {
@@ -260,6 +261,12 @@ namespace LeetCode75
                 Console.WriteLine();  
             }
 
+            // 1207.Unique Number of Occurrences
+            int[] arr1207 = [1, 2, 2, 1, 1, 3];
+            // int[] arr1207 = [1,2];
+            // int[] arr1207 = [-3,0,1,-3,1,1,1,-3,10,0];
+
+            Console.WriteLine($"num occur: {UniqueNumOccruences1207.UniqueOccurrences(arr1207)}");
         }
 
 
