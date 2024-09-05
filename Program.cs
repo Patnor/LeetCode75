@@ -267,6 +267,33 @@ namespace LeetCode75
              int[] arr1207 = [-3,0,1,-3,1,1,1,-3,10,0];
 
             Console.WriteLine($"num occur: {UniqueNumOccruences1207.UniqueOccurrences(arr1207)}");
+
+            //1657. Determine if Two Strings Are Close
+            //            Example 1:
+
+            string word1_1657 = "abc", word2_1657 = "bca";
+            //Output: true
+            //Explanation: You can attain word2 from word1 in 2 operations.
+            //Apply Operation 1: "abc"-> "acb"
+            //Apply Operation 1: "acb"-> "bca"
+
+            //Example 2:
+
+            //Input: word1 = "a", word2 = "aa"
+            //Output: false
+            //Explanation: It is impossible to attain word2 from word1, or vice versa, in any number of operations.
+
+            //Example 3:
+
+            //Input: word1 = "cabbba", word2 = "abbccc"
+            //Output: true
+            //Explanation: You can attain word2 from word1 in 3 operations.
+            //Apply Operation 1: "cabbba"-> "caabbb"
+            //Apply Operation 2: "caabbb"-> "baaccc"
+            //Apply Operation 2: "baaccc"-> "abbccc"
+
+            Console.WriteLine(DetIf2StringsAreClose1657.CloseStrings(word1_1657,word2_1657));
+
         }
 
 
