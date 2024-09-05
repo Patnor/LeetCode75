@@ -10,9 +10,22 @@ namespace LeetCode75
     {
         public static bool UniqueOccurrences(int[] arr)
         {
+            Dictionary<int, int> dic = new Dictionary<int, int>();
 
+            foreach(int num in arr)
+            {
+                if (dic.TryAdd(num, 0))
+                {
 
-            return true;
+                }
+                else
+                {
+                    dic[num] += 1;
+                }
+            }
+            HashSet<int> hs = dic.Values.ToHashSet();
+
+            return hs.Count == dic.Count;
         }
     }
 }
