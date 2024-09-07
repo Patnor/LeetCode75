@@ -271,7 +271,7 @@ namespace LeetCode75
             //1657. Determine if Two Strings Are Close
             //            Example 1:
 
-            string word1_1657 = "abc", word2_1657 = "bca";
+            //string word1_1657 = "abc", word2_1657 = "bca";
             //Output: true
             //Explanation: You can attain word2 from word1 in 2 operations.
             //Apply Operation 1: "abc"-> "acb"
@@ -279,13 +279,13 @@ namespace LeetCode75
 
             //Example 2:
 
-            //Input: word1 = "a", word2 = "aa"
+            string word1_1657 = "a", word2_1657 = "aa";
             //Output: false
             //Explanation: It is impossible to attain word2 from word1, or vice versa, in any number of operations.
 
             //Example 3:
 
-            //Input: word1 = "cabbba", word2 = "abbccc"
+            //string word1_1657 = "cabbba", word2_1657 = "abbccc";
             //Output: true
             //Explanation: You can attain word2 from word1 in 3 operations.
             //Apply Operation 1: "cabbba"-> "caabbb"
