@@ -11,9 +11,23 @@ namespace LeetCode75
 
         public static string RemoveStars(string s)
         {
+            int index = 0;
 
+            if (!s.Contains('*'))
+                return s;
 
-            return "";
+            while(index < s.Length)
+            {
+                if (s.ElementAt(index) == '*')
+                {
+                    
+                    s = s.Remove(index - 1, 2);
+                    index -= 2;
+                }
+                index++;
+            }
+
+            return s;
         }
     }
 }
