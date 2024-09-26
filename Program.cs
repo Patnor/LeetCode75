@@ -312,6 +312,22 @@ namespace LeetCode75
 
             Console.WriteLine("Number of pairs: " + EqualRowandColumnPairs2352.EqualPairsHash(grid));
 
+
+
+            //                 2390. Removing Stars From a String
+            //            Example 1:
+
+            string str2390 = "leet**cod*e";
+            //Output: "lecoe"
+
+            //Example 2:
+
+            // str2390 = "erase*****";
+            //Output: ""
+            //Explanation: The entire string is removed, so we return an empty string.
+
+            Console.WriteLine("String = " + RemoveStarsFromString2390.RemoveStars(s));
+
         }
 
 
