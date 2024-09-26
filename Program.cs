@@ -310,7 +310,7 @@ namespace LeetCode75
             //            - (Row 2, Column 2): [2, 4, 2, 2]
             //            - (Row 3, Column 2): [2, 4, 2, 2]
 
-            Console.WriteLine("Number of pairs: " + EqualRowandColumnPairs2352.EqualPairsBrutForce(grid));
+            Console.WriteLine("Number of pairs: " + EqualRowandColumnPairs2352.EqualPairsHash(grid));
 
         }
 

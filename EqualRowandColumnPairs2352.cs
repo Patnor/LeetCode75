@@ -35,9 +35,32 @@ namespace LeetCode75
 
         public static int EqualPairsHash(int[][] grid)
         {
+            int count = 0;
+            int len = grid.Length;
 
 
-            return 0;
+            Dictionary<string, int> rowCounts = [];
+            foreach (int[] row in grid)
+            {
+                string rowString =  string.Join(", ", row) ;
+                rowCounts[rowString] = 1 + (rowCounts.TryGetValue(rowString, out int rowCount) ? rowCount : 0);
+
+            }
+
+
+            for (int c = 0; c < len; c++)
+            {
+                int[] colArray = new int[len];
+                for (int r = 0; r < len; ++r)
+                {
+                    colArray[r] = grid[r][c];
+                }
+                string colString = "[" + string.Join(", ", colArray) + "]";
+                count += rowCounts.TryGetValue(colString, out int colCount) ? colCount : 0;
+            }
+
+
+            return count;
         }
 
         public static int EqualPairsTrie(int[][] grid)
