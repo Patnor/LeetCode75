@@ -332,6 +332,40 @@ namespace LeetCode75
 
             string answer2390 = RemoveStarsFromString2390.RemoveStarsStack(str2390);
             Console.WriteLine(answer2390);
+
+
+            //  735. Asteroid Collision
+            //            Example 1:
+
+            int[] asteroids = [5, 10, -5];
+            //Output: [5, 10]
+            //Explanation: The 10 and - 5 collide resulting in 10.The 5 and 10 never collide.
+
+            //Example 2:
+
+            //int[] asteroids = [8, -8];
+            //Output: []
+            //        Explanation: The 8 and - 8 collide exploding each other.
+
+            //Example 3:
+
+            //int asteroids = [10, 2, -5];
+            //Output: [10]
+            //Explanation: The 2 and - 5 collide resulting in -5.The 10 and - 5 collide resulting in 10.
+
+
+            Console.WriteLine("asteriod = ");
+
+            int[] astroidResult = AsteriodCollision735.AsteroidCollision(asteroids);
+            foreach(int num in astroidResult)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
+
+
+
+
         }
 
 
