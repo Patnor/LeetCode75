@@ -29,5 +29,20 @@ namespace LeetCode75
 
             return s;
         }
+
+        public static string RemoveStarsStack(string s)
+        {
+            Stack<char> stack = new();
+
+            foreach(char c in s)
+            {
+                if (c != '*')
+                    stack.Push(c);
+                else
+                    stack.Pop();
+            }
+
+            return string.Join("",stack.ToArray().Reverse());
+        }
     }
 }
