@@ -367,6 +367,26 @@ namespace LeetCode75
 
 
 
+
+            // 394. Decode String
+
+            //            Example 1:
+
+            string s394 = "3[a]2[bc]";
+            //Output: "aaabcbc"
+
+            //Example 2:
+
+            //string s394 = "3[a2[c]]";
+            //Output: "accaccacc"
+
+            //Example 3:
+
+            //string s394 = "2[abc]3[cd]ef";
+            //Output: "abcabccdcdcdef"
+            Console.WriteLine();
+            Console.WriteLine("Decoded string: " + DecodeString394.DecodeString(s394))
+
         }
 
 
