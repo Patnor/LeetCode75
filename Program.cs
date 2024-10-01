@@ -385,7 +385,14 @@ namespace LeetCode75
             //string s394 = "2[abc]3[cd]ef";
             //Output: "abcabccdcdcdef"
             Console.WriteLine();
-            Console.WriteLine("Decoded string: " + DecodeString394.DecodeString(s394))
+            Console.WriteLine("Decoded string: " + DecodeString394.DecodeString(s394));
+
+
+            // linkin challenge
+            int a = 5;
+            Func<int> f = () => a * 2;
+            a = 10;
+            Console.WriteLine(f());
 
         }
 
