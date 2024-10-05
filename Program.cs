@@ -337,7 +337,7 @@ namespace LeetCode75
             //  735. Asteroid Collision
             //            Example 1:
 
-            //int[] asteroids = [5, 10, -5];
+           // int[] asteroids = [5, 10, -5];
             //Output: [5, 10]
             //Explanation: The 10 and - 5 collide resulting in 10.The 5 and 10 never collide.
 
@@ -353,7 +353,13 @@ namespace LeetCode75
             //Output: [10]
             //Explanation: The 2 and - 5 collide resulting in -5.The 10 and - 5 collide resulting in 10.
 
-            int[] asteroids = [-2, -1, 1, 2];
+            //int[] asteroids = [-2, -1, 1, 2];
+
+            //int[] asteroids = [-2, -2, 1, -2];
+
+            //int[] asteroids = [-2, -2, 1, -1];
+
+            int[] asteroids =[1, -2, -2, -2];
 
             Console.WriteLine("asteriod = ");
 

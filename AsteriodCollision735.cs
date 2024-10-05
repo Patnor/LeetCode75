@@ -16,47 +16,48 @@ namespace LeetCode75
             {
                 if(stack.Count > 0)
                 {
-                    // check sign of top of stack
-                    // if signs are the same push
-                    // if signs are different compare
-                    // and push bigger astroid on the stack
-
                     int temp = stack.Pop();
 
-                    // check if the signs are the same.
-                    if(temp * num > 0)
+                    if(temp < 0 || num > 0 )
                     {
                         stack.Push(temp);
                         stack.Push(num);
                     }
                     else
                     {
-                        if (Math.Abs(temp) > Math.Abs(num))
-                            stack.Push(temp);
-                        else
+                        while (temp > 0)
                         {
-                            while (stack.Count > 0)
+                            if (Math.Abs(temp) == Math.Abs(num))
+                                break;
+                            else if( Math.Abs(num) > temp)
                             {
-                                temp = stack.Pop();
-
-                                if (Math.Abs(temp) > Math.Abs(num))
+                                if(stack.Count() > 0)
                                 {
-                                    stack.Push(temp);
-                                    break;
-                                }
-                                else if (Math.Abs(temp) == Math.Abs(num))
-                                    break;
+                                    temp = stack.Pop();
+                                    if(temp < 0)
+                                    {
+                                        stack.Push(temp);
+                                        stack.Push(num);
+                                        break;
+                                    }
+                                }                             
                                 else
                                 {
                                     stack.Push(num);
+                                    break;
                                 }
                             }
-                        }                 
-                    }                             
-                }
+                            else
+                            {
+                                stack.Push(temp);
+                                break;
+                            }
+                        }
+                    }
+                }                                         
                 else
                 {
-                    stack.Push(num);
+                        stack.Push(num);
                 }
             }
 
@@ -64,3 +65,41 @@ namespace LeetCode75
         }
     }
 }
+
+
+
+/*
+  else if(num > 0 && temp > 0)
+                    {
+                        stack.Push(temp);
+                        stack.Push(num);
+                    }                  
+                    else if (Math.Abs(temp) > Math.Abs(num))
+                    {
+                        stack.Push(temp);
+                    }                         
+                    else
+                    {
+                        while (temp > 0 && stack.Count() > 0)
+                        {
+                           
+                            
+
+                            if (temp < 0)
+                            {
+                                stack.Push(temp);
+                                stack.Push(num);
+                            }
+                            else if(Math.Abs(temp) == Math.Abs(num))
+                            {
+                                break;
+                            }
+                            else if (Math.Abs(temp) > Math.Abs(num))
+                            {
+                                stack.Push(temp);
+                                break;
+                            }
+                            temp = stack.Pop();
+                        }
+                    }                 
+ */
